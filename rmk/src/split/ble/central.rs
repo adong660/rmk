@@ -290,8 +290,8 @@ fn defaul_central_conn_param() -> ConnectParams {
     ConnectParams {
         min_connection_interval: Duration::from_micros(7500),
         max_connection_interval: Duration::from_micros(7500),
-        max_latency: 400, // 3s
-        supervision_timeout: Duration::from_secs(7),
+        max_latency: 30, // 225ms
+        supervision_timeout: Duration::from_secs(5),
         ..Default::default()
     }
 }
